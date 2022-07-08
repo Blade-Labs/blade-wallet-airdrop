@@ -1,4 +1,4 @@
-import BladeAirdrop from ".";
+import BladeAirdrop from "./index.js";
 
 // init
 window.onload = () => {
