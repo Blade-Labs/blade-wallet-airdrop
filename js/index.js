@@ -1,6 +1,9 @@
-import { isMobile, translate } from "./utils.js";
+import css from "../css/main.css";
+
 import BladeErrors from "./errors.js";
 import CONFIG from "./config.js";
+
+import { isMobile, translate } from "./utils.js";
 
 class BladeAirdrop{
   constructor() {
