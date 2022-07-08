@@ -9,7 +9,7 @@
   color: white;
   font-weight: 500;
   font-size: 14px;
-  background-color: #1d1c1d;
+  background-color: #1d1c1d !important;
 }
 
 .blade-airdrop_btn::before {
