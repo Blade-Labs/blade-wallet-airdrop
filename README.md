@@ -51,5 +51,5 @@ window.onload = () => {
 ```
 
 ### Links
-`demo` - https://mikhaben.github.io/blade-wallet-airdrop/
-`github` - https://github.com/mikhaben/blade-wallet-airdrop
+* `demo` - https://mikhaben.github.io/blade-wallet-airdrop/
+* `github` - https://github.com/mikhaben/blade-wallet-airdrop
