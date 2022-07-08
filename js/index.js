@@ -32,7 +32,7 @@ class BladeAirdrop{
     this.btn.innerHTML = this.translate("btnLabelConnect");
     this.btn.className = "blade-airdrop_btn"
     this.btn.type = "button";
-    this.btn.setAttribute("waiting", false)
+    this.box.setAttribute("data-waiting", false)
     this.box.appendChild(this.btn);
     this.addBtnListener();
   }
@@ -50,7 +50,7 @@ class BladeAirdrop{
     } else {
       if (this.isBladeInstalled()) {
         this.createOverlay();
-        this.btn.setAttribute("waiting", true);
+        this.box.setAttribute("data-waiting", true);
       } else {
         window.open(this.webLink)
       }
