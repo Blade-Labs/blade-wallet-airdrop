@@ -1,12 +1,12 @@
 // import css from "../css/main.css";
 
 import BladeErrors from "./errors.js";
-import CONFIG from "./config.js";
 
 import { isMobile, translate } from "./utils.js";
 
 class BladeAirdrop{
   constructor() {
+    this.webLink = process.env.WEB_LINK
     this.errors = BladeErrors;
     this.translate = translate;
     this.btn;
@@ -52,7 +52,7 @@ class BladeAirdrop{
         this.createOverlay();
         this.btn.setAttribute("waiting", true);
       } else {
-        window.open(CONFIG.WEB_LINK)
+        window.open(this.webLink)
       }
     }
   }
@@ -73,8 +73,8 @@ class BladeAirdrop{
   }
 
   generateDeeplink () {
-    let firebase = CONFIG.IS_DEVELOP ? CONFIG.DEV_DEEPLINK : CONFIG.PROD_DEEPLINK;
-    let deeplink = new URL(CONFIG.DEEPLINK);
+    let firebase = process.env.F_DEEPLINK;
+    let deeplink = new URL(process.env.DEEPLINK);
 
     for (const [key, value] of Object.entries(this.attributes)) {
       deeplink.searchParams.set(key, value);
@@ -84,8 +84,9 @@ class BladeAirdrop{
   }
 
   getAttributes() {
-    CONFIG.ATTRIBUTE_KEYS.forEach(key => {
-      const value = this.box.getAttribute(key);
+    const keys = JSON.parse(process.env.ATTRIBUTE_KEYS);
+    keys.forEach(key => {
+      const value = this.box.dataset[key];
 
       value
         ? this.attributes[key] = value

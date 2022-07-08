@@ -19,23 +19,23 @@ npm install blade-wallet-airdrop --save
 
 You must create a div that contains the required tags with parameters.
 
-| Tag           | Value |
-|:--------------|:------------------|
-| `id`          | "bladeNFTAirdrop" |
-| `useTestnet`  | string            |
-| `dApp_code`   | string            |
-| `dApp_nonce`  | string            |
-| `dApp_secret` | string            |
+| Tag                 | Value |
+|:--------------------|:------------------|
+| `id`                | "bladeNFTAirdrop" |
+| `data-use-testnet`  | boolean           |
+| `data-dapp-code`    | string            |
+| `data-dapp-nonce`   | string            |
+| `data-dapp-secret`  | string            |
 
 Example 👇
 
 ```html
   <div
     id="bladeNFTAirdrop"
-    useTestnet="false"
-    dApp_code="1234"
-    dApp_nonce="1234"
-    dApp_secret="1234"
+    data-use-testnet="false"
+    data-dapp-code="1234"
+    data-dapp-nonce="1234"
+    data-dapp-secret="1234"
   >
   </div>
 ```
