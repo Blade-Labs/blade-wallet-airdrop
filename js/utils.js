@@ -1,4 +1,4 @@
-import messages from "./messages.json";
+import messages from "./messages.js";
 import BladeErrors from "./errors.js";
 
 export const isMobile = () => {
