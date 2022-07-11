@@ -48,5 +48,5 @@ npm run dev
 ```
 
 ### Links
-* `demo` - https://mikhaben.github.io/blade-wallet-airdrop/
-* `github` - https://github.com/mikhaben/blade-wallet-airdrop
+* `demo` - https://blade-labs.github.io/blade-wallet-airdrop/
+* `github` - https://github.com/Blade-Labs/blade-wallet-airdrop
