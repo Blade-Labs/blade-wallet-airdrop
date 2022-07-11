@@ -12,11 +12,9 @@
   background-color: #1d1c1d !important;
 }
 
-.blade-airdrop_btn::before {
-  content: "";
+.blade-airdrop_btn-img {
   width: 18px;
   height: 18px;
-  background: transparent center/cover url("../img/blade-logo.svg") no-repeat;
   margin-right: 6px;
 }
 
@@ -50,8 +48,7 @@
   text-align: center;
 }
 
-.blade-airdrop_popup::before {
-  content: "";
+.blade-airdrop_popup-img {
   display: block;
   position: absolute;
   top: 50%;
@@ -59,5 +56,4 @@
   right: -58px;
   width: 64px;
   height: 196px;
-  background: transparent center/cover url("../img/arrow.svg") no-repeat;
 }
