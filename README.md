@@ -11,8 +11,15 @@
 
 ### Instalation
 
+Download the project.
 ``` bash
-npm install blade-wallet-airdrop --save
+npm run build
+```
+Fit into your project "dist/main.js" and "dist/style.css" files.
+
+For local testing:
+``` bash
+npm run start
 ```
 
 ### html
