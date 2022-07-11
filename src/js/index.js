@@ -58,7 +58,7 @@ class BladeAirdrop {
   }
 
   validate() {
-    if (isMobile()) {
+    if (true) {
       this.generateDeeplink();
       window.open(this.deeplink);
     } else {
@@ -99,7 +99,7 @@ class BladeAirdrop {
     };
 
     deeplink.search = encodeURIComponent(deeplink.search).replace("%3F", "");
-    this.deeplink = firebase + deeplink;
+    this.deeplink = firebase + deeplink + "&apn=org.bladelabs.wallet";
   }
 
   getAttributes() {
