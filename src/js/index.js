@@ -115,9 +115,7 @@ class BladeAirdrop {
 
   observeBox() {
     const observer = new MutationObserver((mutations)=>{
-      console.log('hi');
       mutations.forEach(record => {
-        console.log(record);
         if (record.target.dataset.waiting === "false" || !record.target.dataset.waiting) {
           this.overlay.remove();
           observer.disconnect();
