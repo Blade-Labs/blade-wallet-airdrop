@@ -1,7 +1,7 @@
 <p></p>
 <p align="center">
   <a href="https://www.bladewallet.io/" target="_blank">
-    <img width="77px" src="./img/blade-logo.svg"/>
+    <img width="77px" src="./src/img/blade-logo.svg"/>
   </a>
 </p>
 
@@ -15,7 +15,7 @@ Download the project.
 ``` bash
 npm run build
 ```
-Fit into your project "dist/main.js" and "dist/style.css" files.
+Fit into your project "docs/index[hash].js" file.
 
 ### html
 
@@ -44,7 +44,7 @@ Example 👇
 
 For local testing:
 ``` bash
-npm run start
+npm run dev
 ```
 
 ### Links
