@@ -58,7 +58,7 @@ class BladeAirdrop {
   }
 
   validate() {
-    if (true) {
+    if (isMobile()) {
       this.generateDeeplink();
       window.open(this.deeplink);
     } else {
