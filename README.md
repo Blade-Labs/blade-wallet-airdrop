@@ -17,11 +17,6 @@ npm run build
 ```
 Fit into your project "dist/main.js" and "dist/style.css" files.
 
-For local testing:
-``` bash
-npm run start
-```
-
 ### html
 
 You must create a div that contains the required tags with parameters.
@@ -47,14 +42,9 @@ Example 👇
   </div>
 ```
 
-### js
-
-```javascript
-import BladeAirdrop from 'blade-wallet-airdrop';
-
-window.onload = () => {
-  new BladeAirdrop();
-};
+For local testing:
+``` bash
+npm run start
 ```
 
 ### Links
