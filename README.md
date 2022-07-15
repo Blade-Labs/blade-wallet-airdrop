@@ -25,9 +25,9 @@ You must create a div that contains the required tags with parameters.
 |:---------------------|:------------------|
 | `id`                 | "bladeNFTAirdrop" |
 | `data-use-testnet`   | boolean           |
-| `data-d-app_code`    | string            |
-| `data-d-app_nonce`   | string            |
-| `data-d-app_secret`  | string            |
+| `data-dapp-code`     | string            |
+| `data-dapp-nonce`    | string            |
+| `data-dapp-secret``  | string            |
 
 Example 👇
 
@@ -35,9 +35,9 @@ Example 👇
   <div
     id="bladeNFTAirdrop"
     data-use-testnet="false"
-    data-d-app_code="123"
-    data-d-app_nonce="123"
-    data-d-app_secret="123"
+    data-dapp-code="1234"
+    data-dapp-nonce="1234"
+    data-dapp-secret="1234"
   >
   </div>
 ```

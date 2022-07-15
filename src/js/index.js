@@ -90,13 +90,14 @@ class BladeAirdrop {
 
   generateDeeplink() {
     let firebase = process.env.NODE_ENV === "development"
-    ? process.env.F_DEEPLINK_DEV
-    : process.env.F_DEEPLINK_PROD;
+                    ? process.env.F_DEEPLINK_DEV
+                    : process.env.F_DEEPLINK_PROD;
     let deeplink = new URL(process.env.DEEPLINK);
 
-    for (const [key, value] of Object.entries(this.attributes)) {
-      deeplink.searchParams.set(key, value);
-    };
+    deeplink.searchParams.set("useTestnet", this.attributes.useTestnet);
+    deeplink.searchParams.set("dApp_code", this.attributes.dappCode);
+    deeplink.searchParams.set("dApp_nonce", this.attributes.dappNonce);
+    deeplink.searchParams.set("dApp_secret", this.attributes.dappSecret);
 
     deeplink.search = encodeURIComponent(deeplink.search).replace("%3F", "");
     this.deeplink = firebase + deeplink + "&apn=org.bladelabs.wallet";
