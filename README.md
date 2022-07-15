@@ -35,9 +35,9 @@ Example 👇
   <div
     id="bladeNFTAirdrop"
     data-use-testnet="false"
-    data-dapp-code="1234"
-    data-dapp-nonce="1234"
-    data-dapp-secret="1234"
+    data-d-app_code="123"
+    data-d-app_nonce="123"
+    data-d-app_secret="123"
   >
   </div>
 ```
