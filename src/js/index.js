@@ -90,8 +90,8 @@ class BladeAirdrop {
 
   generateDeeplink() {
     let firebase = process.env.NODE_ENV === "development"
-                    ? process.env.F_DEEPLINK_DEV
-                    : process.env.F_DEEPLINK_PROD;
+    ? process.env.F_DEEPLINK_DEV
+    : process.env.F_DEEPLINK_PROD;
     let deeplink = new URL(process.env.DEEPLINK);
 
     for (const [key, value] of Object.entries(this.attributes)) {

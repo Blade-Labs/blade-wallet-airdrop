@@ -21,13 +21,13 @@ Fit into your project "docs/index[hash].js" file.
 
 You must create a div that contains the required tags with parameters.
 
-| Tag                 | Value |
-|:--------------------|:------------------|
-| `id`                | "bladeNFTAirdrop" |
-| `data-use-testnet`  | boolean           |
-| `data-dapp-code`    | string            |
-| `data-dapp-nonce`   | string            |
-| `data-dapp-secret`  | string            |
+| Tag                  | Value |
+|:---------------------|:------------------|
+| `id`                 | "bladeNFTAirdrop" |
+| `data-use-testnet`   | boolean           |
+| `data-d-app_code`    | string            |
+| `data-d-app_nonce`   | string            |
+| `data-d-app_secret`  | string            |
 
 Example 👇
 
