@@ -27,7 +27,7 @@ You must create a div that contains the required tags with parameters.
 | `data-use-testnet`   | boolean           |
 | `data-dapp-code`     | string            |
 | `data-dapp-nonce`    | string            |
-| `data-dapp-secret``  | string            |
+| `data-dapp-secret`   | string            |
 
 Example 👇
 
