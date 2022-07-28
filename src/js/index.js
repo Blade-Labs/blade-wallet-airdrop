@@ -62,7 +62,7 @@ class BladeAirdrop {
       this.generateDeeplink();
       window.open(this.deeplink);
     } else {
-      if (this.isBladeInstalled) {
+      if (this.isBladeInstalled || window.bladeConnect) {
         this.createOverlay();
         this.box.setAttribute(this.stateAttribute, true);
         this.observeBox();
